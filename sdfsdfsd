@@ -1992,16 +1992,16 @@ local Library = {
             }
 
             local Items = { } do 
-                Items["Watermark"] = Library:Create("Frame", {
-                    Name = "\0",
-                    Parent = Library.Holder.Instance,
-                    AnchorPoint = Vector2.new(0, 0),
-                    Position = UDim2.new(0, 10, 0, GuiInset + 10),
-                    Size = UDim2.new(0, 0, 0, 53),
-                    BorderSizePixel = 0,
-                    AutomaticSize = Enum.AutomaticSize.X,
-                    BackgroundColor3 = Library.Theme["Background"]
-                }):AddToTheme({BackgroundColor3 = 'Background'})
+Items["Watermark"] = Library:Create("Frame", {
+    Name = "\0",
+    Parent = Library.Holder.Instance,
+    AnchorPoint = Vector2.new(0, 0),
+    Position = UDim2.new(0, 10, 0, GuiInset + 10),
+    Size = UDim2.new(0, 0, 0, 53),
+    BorderSizePixel = 0,
+    AutomaticSize = Enum.AutomaticSize.X,
+    BackgroundTransparency = 1
+}):AddToTheme({})
 
                 Items["Watermark"]:MakeDraggable()
                 
@@ -2182,16 +2182,16 @@ local Library = {
             }
         
             local Items = {} do
-                Items["KeybindList"] = Library:Create("Frame", {
-                    Name = "\0", 
-                    Parent = Library.Holder.Instance, 
-                    AnchorPoint = Vector2.new(0, 0.5), 
-                    Position = UDim2.new(0, 10, 0.5, 0), 
-                    Size = UDim2.new(0, 34, 0, 53), 
-                    ClipsDescendants = true, 
-                    BorderSizePixel = 0, 
-                    BackgroundColor3 = Library.Theme["Background"]
-                }):AddToTheme({BackgroundColor3 = "Background"})
+Items["KeybindList"] = Library:Create("Frame", {
+    Name = "\0", 
+    Parent = Library.Holder.Instance, 
+    AnchorPoint = Vector2.new(0, 0.5), 
+    Position = UDim2.new(0, 10, 0.5, 0), 
+    Size = UDim2.new(0, 34, 0, 53), 
+    ClipsDescendants = true, 
+    BorderSizePixel = 0, 
+    BackgroundTransparency = 1
+}):AddToTheme({})
 
                 Items["KeybindList"]:MakeDraggable()
         
