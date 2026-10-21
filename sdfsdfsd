@@ -2749,9 +2749,7 @@ local Library = {
             local OffsetY = 12
             local Width = 7 -- this would be the gap between each letter
 
-            local WaveHeight = 4
-            local WaveSpeed =  2.5
-            local WaveSpacing = 0.25
+
 
             local Letters = { } -- try not to make the title too long since every letter is created individually for the animation
 
@@ -2777,15 +2775,7 @@ local Library = {
                 }
             end
 
-            Library:Connect(RunService.RenderStepped, function()
-                local Tick = tick()
-
-                for Index, Value in Letters do 
-                    local OffsetY = math.sin((Tick * WaveSpeed) - (Index * WaveSpacing)) * WaveHeight
-
-                    Value.LetterInstance.Instance.Position = UDim2.new(0, Value.X, 0, Value.Y + OffsetY)
-                end
-            end)            
+        
 
             Window:Center()
             return setmetatable(Window, Library)
