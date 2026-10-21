@@ -1,4 +1,4 @@
---478343873487
+
 if getgenv().Library then
     getgenv().Library:Exit()
 end
@@ -1998,7 +1998,6 @@ local Library = {
                     LineJoinMode = Enum.LineJoinMode.Miter,
                     Color = Library.Theme["Border"],
                     BorderOffset = UDim.new(0, 1)
-                    Thickness = 0.3
                 }):AddToTheme({Color = 'Border'})
                 
                 Library:Create("UIStroke", {
@@ -2188,7 +2187,6 @@ local Library = {
                     LineJoinMode = Enum.LineJoinMode.Miter, 
                     Color = Library.Theme["Border"], 
                     BorderOffset = UDim.new(0, 1)
-                    Thickness = 0.5,
                 }):AddToTheme({Color = "Border"})
 
                 Library:Create("UIStroke", {
